@@ -6,7 +6,7 @@ const http = axios.create({
 
 export const getUserService = async () => {
   try {
-    const response = await http.get(USER_API_URLsadasd);
+    const response = await http.get(USER_API_URL);
     if (response.status === 200) {
       return response.data;
     }

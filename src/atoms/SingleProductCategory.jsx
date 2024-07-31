@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const SingleProductCategory = ({ name }) => {
-    return (
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{name}</span>
+  return (
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+      {name}
+    </span>
+  );
+};
 
-    )
-}
-
-export default SingleProductCategory
+export default SingleProductCategory;

@@ -10,20 +10,26 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.8",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "serve": "json-server --watch src/db.json --port 3001"
   },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [
@@ -54,6 +60,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.19",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.4",

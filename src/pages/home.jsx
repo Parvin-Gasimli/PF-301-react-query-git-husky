@@ -1,12 +1,14 @@
-import React from 'react'
-import CardTemplate from '../templates/CardTemplate'
+import React from 'react';
+import CardTemplate from '../templates/CardTemplate';
+import CreateUser from '../templates/CreateUser';
 
 const HomePage = () => {
-    return (
-        <div>
-            <CardTemplate />
-        </div>
-    )
-}
+  return (
+    <div>
+      <CreateUser />
+      <CardTemplate />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

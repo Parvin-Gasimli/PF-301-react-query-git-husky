@@ -5,7 +5,7 @@ import CreateUser from '../templates/CreateUser';
 const HomePage = () => {
   return (
     <div>
-      <CreateUser />
+      <CreateUser iseEdit={false} data={[]} />
       <CardTemplate />
     </div>
   );

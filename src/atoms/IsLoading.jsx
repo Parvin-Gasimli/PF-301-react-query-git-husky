@@ -2,9 +2,9 @@ import React from 'react';
 
 const IsLoading = () => {
   return (
-    <div className="fixed left-0 right-0 flex items-center justify-center h-screen w-screen">
+    <div className="flex justify-center item-center">
       <img
-        class="w-20 h-20 animate-spin"
+        className="w-12 h-12 animate-spin"
         src="https://www.svgrepo.com/show/448500/loading.svg"
         alt="Loading icon"
       ></img>

@@ -36,3 +36,25 @@ export const deleteUserService = async (id) => {
     throw new Error(error);
   }
 };
+
+export const getUserByIdService = async (id) => {
+  try {
+    const response = await http.get(`${USER_API_URL}/${id}`);
+    if (response.status === 200) {
+      return response.data;
+    }
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const updateUserService = async (id, data) => {
+  try {
+    const response = await http.put(`${USER_API_URL}/${id}`, data);
+    if (response.status === 200) {
+      return response.data;
+    }
+  } catch (error) {
+    throw new Error(error);
+  }
+};

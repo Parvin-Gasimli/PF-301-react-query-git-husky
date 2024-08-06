@@ -16,7 +16,6 @@ module.exports = {
         'revert',
         'style',
         'test',
-        'button',
       ],
     ],
   },
